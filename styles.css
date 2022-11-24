@@ -27,11 +27,26 @@ body {
   align-items: center;
   justify-content: center;
 }
+.left:hover {
+  background-color: #f2fdff;
+  cursor: pointer;
+}
 .tri1 {
-  border-right: 0.4rem solid white;
+  border-right: 0.4rem solid #f2fdff;
   border-bottom: 0.4rem solid transparent;
   border-top: 0.4rem solid transparent;
+  position: relative;
+  /* right: 0.1rem; */
 }
+.tri1:hover {
+  border-right: 0.4rem solid #3e92cc;
+  cursor: pointer;
+}
+.left:hover .tri1 {
+  border-right: 0.4rem solid #3e92cc;
+  cursor: pointer;
+}
+
 .display {
   height: 32rem;
   width: 60rem;
@@ -65,8 +80,18 @@ body {
   align-items: center;
   justify-content: center;
 }
+.right:hover {
+  background-color: #f2fdff;
+  cursor: pointer;
+}
 .tri2 {
-  border-left: 0.4rem solid white;
+  border-left: 0.4rem solid #f2fdff;
   border-bottom: 0.4rem solid transparent;
   border-top: 0.4rem solid transparent;
+  position: relative;
+  left: 0.1rem;
+}
+.right:hover .tri2 {
+  border-left: 0.4rem solid #3e92cc;
+  cursor: pointer;
 }

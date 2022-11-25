@@ -95,3 +95,15 @@ body {
   border-left: 0.4rem solid #3e92cc;
   cursor: pointer;
 }
+@media (max-width: 640px) {
+  :root {
+    font-size: 1rem;
+  }
+  .display {
+    height: 28rem;
+    width: 22rem;
+    border: 0.6rem solid #3e92cc;
+    border-radius: 0.6rem;
+    background-size: contain;
+  }
+}

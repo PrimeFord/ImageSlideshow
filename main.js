@@ -1,15 +1,26 @@
-const bg = [0, 1, 2, 3, 4];
 const left = document.querySelector(".left");
 const right = document.querySelector(".right");
 const display = document.querySelector(".display");
 
+const bg = [
+  `url(./media/0.jpeg)`,
+  `url(./media/1.jpeg)`,
+  `url(./media/2.jpeg)`,
+  `url(./media/3.jpeg)`,
+  `url(./media/4.jpeg)`,
+];
+
+let i = 0;
 left.addEventListener(
-  "click"(
-    (previous = () => {
-      let i = 0;
-      init--;
-      display.style.background = `url(./media/${bg[i]}.jpeg)`;
-      display.textContent = init;
-    })
-  )
+  "click",
+  (previous = () => {
+    display.style.backgroundImage = bg[i--];
+  })
+);
+
+right.addEventListener(
+  "click",
+  (next = () => {
+    display.style.backgroundImage = bg[i++];
+  })
 );

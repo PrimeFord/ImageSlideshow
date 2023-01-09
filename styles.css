@@ -54,6 +54,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 0.6rem;
   outline: 0.6rem solid #3e92cc;
 }
 
@@ -101,9 +102,9 @@ body {
     font-size: 1rem;
   }
   .display {
-    height: 28rem;
+    height: max-content;
     width: 22rem;
-    border: 0.6rem solid #3e92cc;
+    outline: 0.6rem solid #3e92cc;
     border-radius: 0.6rem;
     background-size: contain;
   }

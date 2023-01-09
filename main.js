@@ -10,45 +10,29 @@ const bg = [
   `url(./media/4.jpeg)`,
 ];
 
-// var currentIndex = 1;
-// displaySlides(currentIndex);
-
-// function displaySlides(num) {
-//   var x;
-//   var slides = document.getElementsByClassName("imageSlides");
-//   if (num > slides.length) {
-//     currentIndex = 1;
-//   }
-//   if (num < 1) {
-//     currentIndex = slides.length;
-//   }
-//   for (x = 0; x < slides.length; x++) {
-//     slides[x].style.display = "none";
-//   }
-//   slides[currentIndex - 1].style.display = "block";
-// }
-
-let i = 0;
+var i = 0;
 left.addEventListener(
   "click",
   (previous = () => {
-    if (i < 0) {
-      i = bg.length;
-      display.style.backgroundImage = bg[i];
+    if (i > 0) {
+      i--;
+      console.log(i);
+    } else {
+      i = bg.length - 1;
     }
-    display.style.backgroundImage = bg[i--];
-    console.log(i);
+    display.style.backgroundImage = bg[i];
   })
 );
 
 right.addEventListener(
   "click",
   (next = () => {
-    if (i > bg.length) {
+    if (i < bg.length - 1) {
+      i++;
+      console.log(i);
+    } else {
       i = 0;
-      display.style.backgroundImage = bg[i];
     }
-    display.style.backgroundImage = bg[i++];
-    console.log(i);
+    display.style.backgroundImage = bg[i];
   })
 );

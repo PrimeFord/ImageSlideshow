@@ -102,7 +102,7 @@ body {
     font-size: 1rem;
   }
   .display {
-    height: max-content;
+    height: 25rem;
     width: 22rem;
     outline: 0.6rem solid #3e92cc;
     border-radius: 0.6rem;
